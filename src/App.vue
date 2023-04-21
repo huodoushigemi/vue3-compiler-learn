@@ -20,8 +20,11 @@ const value = ref('')
 
   <br /><br />
 
-  <MyInput :value.sync="value" />
-  <p>.sync test: {{ value }}</p>
+  <div style="color: #00ff00">
+    .sync test:
+    <MyInput :value.sync="value" />
+    <p> {{ value }}</p>
+  </div>
 </template>
 
 <style scoped>
