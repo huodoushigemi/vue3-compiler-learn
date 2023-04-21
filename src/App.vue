@@ -13,7 +13,9 @@ const value = ref('')
   </div>
 
   <HelloWorld msg="Vite + Vue">
-    <div #footer>aaaaaaaaa</div>
+    <div #footer>
+      {{ '<div #footer>test: footer<\/div>' }}
+    </div>
   </HelloWorld>
 
   <br /><br />

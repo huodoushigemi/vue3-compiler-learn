@@ -24,5 +24,7 @@ const count = ref(0)
   height: 55px;
   width: 100%;
   background: #80808080;
+  color: #00ff00;
+  line-height: 55px;
 }
 </style>

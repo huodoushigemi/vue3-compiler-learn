@@ -23,7 +23,7 @@ export const transformSlot: NodeTransform = (node, ctx) => {
 
   // 查找元素是否有 v-slot
   // e.g. <div #xxx />
-  const vSlot = findDir(node, 'slot')
+  const vSlot = findDir(node, 'slot', true)
   if (!vSlot) return
 
   remove(props, vSlot)
