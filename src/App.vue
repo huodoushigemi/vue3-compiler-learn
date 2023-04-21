@@ -13,6 +13,7 @@ const value = ref('')
   </div>
 
   <HelloWorld msg="Vite + Vue">
+    <div #footer>aaaaaaaaa</div>
   </HelloWorld>
 
   <br /><br />
