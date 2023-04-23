@@ -20,7 +20,7 @@ const value = ref('')
   </TestSlot>
 
   <TestSync :value.sync="value">
-    <p>{{ value }}</p>
+    <div>{{ value }}</div>
   </TestSync>
 
   <TestForIf />
