@@ -9,7 +9,11 @@ import { transformForIf } from './transformForIf'
 export default defineConfig({
   plugins: [
     vue({
-      template: { compilerOptions: { nodeTransforms: [transformSync, transformSlot, transformForIf] } }
+      template: {
+        compilerOptions: {
+          nodeTransforms: [transformSync, transformSlot, transformForIf]
+        }
+      }
     })
   ]
 })
