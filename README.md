@@ -20,7 +20,7 @@
 
 ## [📄 transformSync.ts](https://github.com/huodoushigemi/vue3-compiler-learn/blob/main/transformSync.ts)
 
-> 把 `.sync` 转化为 `@update:xxx`
+> 把 `.sync` 转化为 `@update:xxx` [**[演示]**](https://stackblitz.com/edit/vitejs-vite-jnw48c?file=src%2FApp.vue%3AL23)
 
 ```html
 <my-component :value.sync="count" />
@@ -36,7 +36,7 @@
 
 ## [📄 transformSlot.ts](https://github.com/huodoushigemi/vue3-compiler-learn/blob/main/transformSlot.ts)
 
-> 把 `v-slot` 支持到普通元素
+> 把 `v-slot` 支持到普通元素 [**[演示]**](https://stackblitz.com/edit/vitejs-vite-jnw48c?file=src%2FApp.vue%3AL20)
 
 ```html
 <my-component>
@@ -58,7 +58,7 @@
 
 ## [📄 transformForIf.ts](https://github.com/huodoushigemi/vue3-compiler-learn/blob/main/transformForIf.ts)
 
-> 让 `v-for` 优先级高于 `v-if`
+> 让 `v-for` 优先级高于 `v-if` [**[演示]**](https://stackblitz.com/edit/vitejs-vite-jnw48c?file=src%2Fcomponents%2FTestForIf.vue)
 
 ```html
 <span v-for="i in 10" v-if="i % 2">{{ i }}</span>
@@ -78,7 +78,7 @@
 
 ## [📄 transformModel.ts](https://github.com/huodoushigemi/vue3-compiler-learn/blob/main/transformModel.ts)
 
-> 将 `v-model` 默认为 `v-model:value`
+> 将 `v-model` 默认为 `v-model:value` [**[演示]**](https://stackblitz.com/edit/vitejs-vite-jnw48c?file=src%2FApp.vue%3AL29,src%2Fcomponents%2FTestModel.vue)
 
 ```html
 <my-component v-model="value" />
