@@ -18,7 +18,7 @@
 
 <br /><br />
 
-## [📄 transformSync.ts](https://github.com/huodoushigemi/vue3-sync-modifier/blob/main/transformSync.js)
+## [📄 transformSync.ts](https://github.com/huodoushigemi/vue3-sync-modifier/blob/main/transformSync.ts)
 
 > 把 `.sync` 转化为 `@update:xxx`
 
@@ -34,7 +34,7 @@
 
 <br />
 
-## [📄 transformSlot.ts](https://github.com/huodoushigemi/vue3-sync-modifier/blob/main/transformSlot.js)
+## [📄 transformSlot.ts](https://github.com/huodoushigemi/vue3-sync-modifier/blob/main/transformSlot.ts)
 
 > 把 `v-slot` 支持到普通元素
 
@@ -56,7 +56,7 @@
 
 <br />
 
-## [📄 transformForIf.ts.ts](https://github.com/huodoushigemi/vue3-sync-modifier/blob/main/transformForIf.ts.js)
+## [📄 transformForIf.ts](https://github.com/huodoushigemi/vue3-sync-modifier/blob/main/transformForIf.ts)
 
 > 让 `v-for` 优先级高于 `v-if`
 
@@ -76,6 +76,28 @@
 
 <br />
 
+## [📄 transformModel.ts](https://github.com/huodoushigemi/vue3-sync-modifier/blob/main/transformModel.ts)
+
+> 将 `v-model` 默认为 `v-model:value`
+
+```html
+<my-component v-model="value" />
+```
+
+> 转换后
+
+```html
+<my-component v-model:value="value" />
+```
+
+<br />
+
 ## [📄 …….ts]()
 
 更多内容持续更新中……
+
+如果你有更多想法，欢迎给我 PR
+
+---
+
+## 👍 点个赞吧 ✨ 👈

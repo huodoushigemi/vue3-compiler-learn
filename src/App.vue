@@ -4,6 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import TestForIf from './components/TestForIf.vue'
 import TestSlot from './components/TestSlot.vue'
 import TestSync from './components/TestSync.vue'
+import TestModel from './components/TestModel.vue'
 
 const value = ref('')
 </script>
@@ -20,10 +21,14 @@ const value = ref('')
   </TestSlot>
 
   <TestSync :value.sync="value">
-    <div>{{ value }}</div>
+    <div>👉{{ value }}</div>
   </TestSync>
 
   <TestForIf />
+
+  <TestModel v-model="value">
+    <div>👉{{ value }}</div>
+  </TestModel>
 
   <br /><br />
 </template>
