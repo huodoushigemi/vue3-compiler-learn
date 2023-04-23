@@ -6,6 +6,7 @@ defineProps<{ value: number }>()
 
 <template>
   <h2>test: (.sync)</h2>
+
   <div class="card">
     <input placeholder="请输入" :value="value" @input="$emit('update:value', $event.target.value)" />
     <slot />
