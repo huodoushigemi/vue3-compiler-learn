@@ -5,11 +5,11 @@ const ELEMENT = 1
 const TEMPLATE = 3
 
 // 创建 template 节点
-const createTemplateNode = (props: BaseElementNode['props'], children: BaseElementNode['children'], loc: BaseElementNode['loc']): TemplateNode => ({
+export const createTemplateNode = (props: BaseElementNode['props'], children: BaseElementNode['children'], loc: BaseElementNode['loc']): TemplateNode => ({
   type: ELEMENT,
   tagType: TEMPLATE,
   tag: 'template',
-  props,
+  props: props.filter(e => e),
   children,
   codegenNode: undefined,
   ns: 0,

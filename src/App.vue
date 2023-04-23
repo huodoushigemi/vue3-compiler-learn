@@ -1,30 +1,31 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
-import MyInput from './components/MyInput.vue'
+import TestForIf from './components/TestForIf.vue'
+import TestSlot from './components/TestSlot.vue'
+import TestSync from './components/TestSync.vue'
 
 const value = ref('')
 </script>
 
 <template>
-  <div>
+  <div style="text-align: center">
     <img src="/vite.svg" class="logo" alt="Vite logo" />
     <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+    <HelloWorld msg="Vite + Vue" />
   </div>
 
-  <HelloWorld msg="Vite + Vue">
-    <div #footer>
-      {{ '<div #footer>test: footer<\/div>' }}
-    </div>
-  </HelloWorld>
+  <TestSlot>
+    <div #test-slot>slot content</div>
+  </TestSlot>
+
+  <TestSync :value.sync="value">
+    <p>{{ value }}</p>
+  </TestSync>
+
+  <TestForIf />
 
   <br /><br />
-
-  <div style="color: #00ff00">
-    .sync test:
-    <MyInput :value.sync="value" />
-    <p> {{ value }}</p>
-  </div>
 </template>
 
 <style scoped>
