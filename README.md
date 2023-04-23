@@ -18,7 +18,7 @@
 
 <br /><br />
 
-## [📄 transformSync.ts](https://github.com/huodoushigemi/vue3-sync-modifier/blob/main/transformSync.ts)
+## [📄 transformSync.ts](https://github.com/huodoushigemi/vue3-compiler-learn/blob/main/transformSync.ts)
 
 > 把 `.sync` 转化为 `@update:xxx`
 
@@ -34,7 +34,7 @@
 
 <br />
 
-## [📄 transformSlot.ts](https://github.com/huodoushigemi/vue3-sync-modifier/blob/main/transformSlot.ts)
+## [📄 transformSlot.ts](https://github.com/huodoushigemi/vue3-compiler-learn/blob/main/transformSlot.ts)
 
 > 把 `v-slot` 支持到普通元素
 
@@ -56,7 +56,7 @@
 
 <br />
 
-## [📄 transformForIf.ts](https://github.com/huodoushigemi/vue3-sync-modifier/blob/main/transformForIf.ts)
+## [📄 transformForIf.ts](https://github.com/huodoushigemi/vue3-compiler-learn/blob/main/transformForIf.ts)
 
 > 让 `v-for` 优先级高于 `v-if`
 
@@ -76,7 +76,7 @@
 
 <br />
 
-## [📄 transformModel.ts](https://github.com/huodoushigemi/vue3-sync-modifier/blob/main/transformModel.ts)
+## [📄 transformModel.ts](https://github.com/huodoushigemi/vue3-compiler-learn/blob/main/transformModel.ts)
 
 > 将 `v-model` 默认为 `v-model:value`
 
