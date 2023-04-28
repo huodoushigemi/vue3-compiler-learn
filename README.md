@@ -15,7 +15,9 @@
 - `v-if` 优先级比 `v-for` 高
 - `v-model` 默认变成了 `v-model:modelValue`
 
-为了更好的深入 vue3 模板编译原理，我决定尝试在编译时对 AST 进行转换，以解决上面问题为目标来 **`👉练练手👈`**。
+<br />
+
+> 为了更好的深入 vue3 模板编译原理，我决定尝试在编译时对 AST 进行转换，以解决上面问题为目标来 **`👉练练手👈`**。
 
 **目标：**
 - 实现对 `sync` 修饰符的支持
@@ -23,7 +25,11 @@
 - 将 `v-for`、`v-if` 回调到和 `vue2` 一样的优先级
 - 将 `v-model` 默认绑定到 `value` 属性
 
-<br /><br />
+<br />
+
+---
+
+<br />
 
 ## [📄 transformSync.ts](https://github.com/huodoushigemi/vue3-compiler-learn/blob/main/transformSync.ts)
 
